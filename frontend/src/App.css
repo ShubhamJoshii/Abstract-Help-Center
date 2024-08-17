@@ -1,0 +1,9 @@
+#root {
+  width: calc(100vw - 2px);
+  min-height: calc(100vh - 4px);
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 2px;
+}
+

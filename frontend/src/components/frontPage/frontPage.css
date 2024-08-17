@@ -1,0 +1,88 @@
+#frontPage {
+  #firstSection {
+    /* background-color: #dadbf0; */
+    /* background-color: #c6c6df96; */
+    background-color: #afafd38f;
+    /* background-color: #c6c6dfd6; */
+    text-align: center;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    h1 {
+      font-weight: 600;
+      margin: 0;
+    }
+    #searchInput {
+      display: flex;
+      align-items: center;
+      width: 550px;
+      background-color: white;
+      border: 1px solid rgba(0, 0, 0, 0.418);
+      border-radius: 4px;
+      overflow: hidden;
+      /* padding: 0px 12px; */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.116);
+      input {
+        outline: none;
+        font-size: 14px;
+        padding: 12px 0  12px 12px;
+        border: none;
+        flex: 1;
+      }
+      button{
+        height: 100%;
+        width: 40px;
+        border: none;
+        outline: none;
+        background: none;
+        cursor: pointer;
+        aspect-ratio: 1;
+        svg {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  #secondSection {
+    display: grid;
+    align-items: unset;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1300px;
+    margin: 100px auto;
+    gap: 80px;
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap; */
+    .card {
+      border: 1px solid #dce2e9;
+      width: 379px;
+      letter-spacing: 1px;
+      background-color: #f4f4f4;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+
+      h3,
+      p {
+        padding: 0 20px;
+      }
+      h3 {
+        margin: 0;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #dce2e9;
+      }
+    }
+  }
+  #notFound{
+    text-align: center;
+    min-height: 200px;
+  }
+  @media only screen and (max-width: 1400px) {
+    #secondSection {
+      grid-template-columns: repeat(2, 1fr);
+      width: 850px;
+    }
+  }
+}
